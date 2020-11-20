@@ -1,0 +1,388 @@
+﻿[
+  {
+    "Type":"INPUT", 
+    "Name":"SYS_TIMESTAMP", 
+    "Id":274, 
+    "Address":[0, 1],
+    "Format":"INT",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Timestamp",
+    "Description":"Current unix timestamp"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"SYS_REGMAP_VERSION", 
+    "Id":16690, 
+    "Address":[2, 3],
+    "Format":"INT",
+    "Value":1001,
+    "Min":1001,
+    "Max":5050,
+    "Label":"Register map version",
+    "Description":"Version of register map in format xxxyyy.\r\nXxx - major version of register map.\r\nYyy - minor version of register map.\r\nMajor version defines compatibility of different register maps. If major version of register map changes, the values previously stored in the flash memory are discarded and factory values are used"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"SYS_CPU_USAGE", 
+    "Id":33298, 
+    "Address":[4],
+    "Format":"FLOAT",
+    "Value":12.3,
+    "Min":0,
+    "Max":100,
+    "Label":"CPU usage",
+    "Description":"CPU usage in percent (measures proportion of time spent in idle task, which may be inaccurate in case of IRQ handlers)"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"SYS_CPU_TEMPER", 
+    "Id":49682, 
+    "Address":[5],
+    "Format":"FLOAT",
+    "Value":25.1,
+    "Min":5,
+    "Max":65.5,
+    "Label":"CPU temperature",
+    "Description":"CPU temperature"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"SYS_PASSWORD_HASH", 
+    "Id":65587, 
+    "Address":[6, 7, 8, 9],
+    "Format":"BIN",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Password hash",
+    "EnumStr": [
+
+    ],
+    "EnumValue": [
+
+    ],
+    "Description":"Hash of the stored password\r\nMeaning of respective bits: \r\n"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"SYS_TEST", 
+    "Id":98642, 
+    "Address":[0, 1],
+    "Format":"INT",
+    "Value":3,
+    "Min":0,
+    "Max":0,
+    "Label":"Testing register",
+    "Description":"For internal use only"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FACT_SERIAL_NUMBER", 
+    "Id":33554706, 
+    "Address":[20, 21],
+    "Format":"INT",
+    "Value":0,
+    "Min":100000,
+    "Max":200000,
+    "Label":"Serial number",
+    "Description":"Serial number of product with common device ID in format xxyyzzzz.\r\nXx - year of production\r\nYy - month of production\r\nzzzz - serial incremental number of the product"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FACT_DEVICE_ID", 
+    "Id":33571090, 
+    "Address":[22, 23],
+    "Format":"INT",
+    "Value":0,
+    "Min":6000,
+    "Max":6000,
+    "Label":"Product number",
+    "Description":"Product family identification. PM6000 series has device id equal to 6000."
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FACT_HW_REVISION", 
+    "Id":33587474, 
+    "Address":[24, 25],
+    "Format":"INT",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Hardware version",
+    "Description":"Hardware revision of the device defined as xx00yyzz:\r\nxx - Bootstrap pins that defines version of MCU-compatible firmwares (0 for current version)\r\n00 - reserved for future use\r\nyy - year of production\r\nzz - month of production"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FACT_BOOT_REVISION", 
+    "Id":33603858, 
+    "Address":[26, 27],
+    "Format":"INT",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Bootloader version",
+    "Description":"Firmware revision of the bootloader as number xxxyyy:\r\nxxx - major version of bootloader\r\nyyy - minor version of bootloader"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FIRM_REVISION", 
+    "Id":50331922, 
+    "Address":[100, 101],
+    "Format":"INT",
+    "Value":0,
+    "Min":10,
+    "Max":150,
+    "Label":"Firmware version",
+    "Description":"Firmware revision of the current application image as an incremental number. See list of FW revision or release notes for respective features."
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FIRM_ASSEMBLY_INFO", 
+    "Id":50348306, 
+    "Address":[102, 103],
+    "Format":"INT",
+    "Value":0,
+    "Min":20191010,
+    "Max":20211231,
+    "Label":"Assembly date",
+    "Description":"Assembly information of the current application in format xxxxyyzz:\r\nxxxx - year of FW build\r\nyy - month of FW build\r\nzz - day of FW build"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FIRM_APP_CHECKSUM", 
+    "Id":50364690, 
+    "Address":[104, 105],
+    "Format":"INT",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"CRC checksum",
+    "Description":"CRC checksum of the current application"
+  },
+  {
+    "Type":"INPUT", 
+    "Name":"FIRM_APP_SIZE", 
+    "Id":50381074, 
+    "Address":[106, 107],
+    "Format":"INT",
+    "Value":0,
+    "Min":10000,
+    "Max":32000,
+    "Label":"Firmware size",
+    "Description":"Firmware size of the current application in bytes"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"COM_LOGIN_RESULT", 
+    "Id":100664656, 
+    "Address":[12],
+    "Format":"ENUM",
+    "Value":0,
+    "Min":0,
+    "Max":3,
+    "Label":"Login result",
+    "EnumStr": [
+      "No user is logged in",
+      "Login attempt has failed",
+      "Normal user has logged in",
+      "Super user has logged in"
+    ],
+    "EnumValue": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Description":"Result of login attempt - current user login access rigths\r\nAllowed values: \r\nNo user is logged in - No user is logged in.\r\nLogin attempt has failed - Login attempt has failed.\r\nNormal user has logged in - Normal user has logged in.\r\nSuper user has logged in - Super user has logged in.\r\n"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"COM_MB_BAUD_RATE", 
+    "Id":100668784, 
+    "Address":[13],
+    "Format":"ENUM",
+    "Value":4,
+    "Min":0,
+    "Max":4,
+    "Label":"Modbus baud rate",
+    "EnumStr": [
+      "9600",
+      "19200",
+      "38400",
+      "57600",
+      "115200"
+    ],
+    "EnumValue": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "Description":"Modbus RTU serial port baud rate\r\nAllowed values: \r\n9600 - 9600 baud/s.\r\n19200 - 19200 baud/s.\r\n38400 - 38400 baud/s.\r\n57600 - 57600 baud/s.\r\n115200 - 115200 baud/s.\r\n"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"COM_MB_PARITY", 
+    "Id":100672880, 
+    "Address":[14],
+    "Format":"ENUM",
+    "Value":0,
+    "Min":0,
+    "Max":2,
+    "Label":"Modbus parity",
+    "EnumStr": [
+      "NONE parity",
+      "EVEN parity",
+      "ODD parity"
+    ],
+    "EnumValue": [
+      0,
+      1,
+      2
+    ],
+    "Description":"Modbus RTU serial port parity\r\nAllowed values: \r\nNONE parity - NONE parity.\r\nEVEN parity - EVEN parity.\r\nODD parity - ODD parity.\r\n"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"COM_MB_STOP_BITS", 
+    "Id":100676976, 
+    "Address":[15],
+    "Format":"ENUM",
+    "Value":0,
+    "Min":0,
+    "Max":1,
+    "Label":"Modbus stop bits",
+    "EnumStr": [
+      "1 stop bit",
+      "2 stop bits"
+    ],
+    "EnumValue": [
+      0,
+      1
+    ],
+    "Description":"Modbus RTU serial port - number of stop bits\r\nAllowed values: \r\n1 stop bit - 1 stop bit.\r\n2 stop bits - 2 stop bits.\r\n"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"COM_MB_ADDRESS", 
+    "Id":100680049, 
+    "Address":[16],
+    "Format":"INT",
+    "Value":1,
+    "Min":1,
+    "Max":247,
+    "Label":"Modbus slave address",
+    "Description":"Modbus RTU serial port slave address"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"COM_MB_APPLY", 
+    "Id":100688209, 
+    "Address":[17],
+    "Format":"INT",
+    "Value":0,
+    "Min":0,
+    "Max":1,
+    "Label":"Apply modbus parameters",
+    "Description":""
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"COM_STRING", 
+    "Id":100696916, 
+    "Address":[18, 19, 20, 21, 22, 23, 24, 25],
+    "Format":"STRING",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"",
+    "Description":""
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"REGU_INPUT_A", 
+    "Id":67109458, 
+    "Address":[100, 101],
+    "Format":"FLOAT32",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Vstup A",
+    "Description":""
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"REGU_OFFSET", 
+    "Id":67125586, 
+    "Address":[102, 103],
+    "Format":"INT",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Offset",
+    "Description":""
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"REGU_MULTIPLIER", 
+    "Id":67142226, 
+    "Address":[104, 105],
+    "Format":"FLOAT32",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Multiplier",
+    "Description":""
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"REGU_RESULT", 
+    "Id":67158610, 
+    "Address":[106, 107],
+    "Format":"FLOAT32",
+    "Value":0,
+    "Min":0,
+    "Max":0,
+    "Label":"Result of InputA plus Offset times multiplier",
+    "Description":""
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"REGU_STATUS", 
+    "Id":67174482, 
+    "Address":[108, 109],
+    "Format":"BIN",
+    "Value":16,
+    "Min":0,
+    "Max":0,
+    "Label":"Status register",
+    "EnumStr": [
+      "General error",
+      "Modbus timeout",
+      "Device is busy",
+      "General warning"
+    ],
+    "EnumValue": [
+      0,
+      4,
+      5,
+      6
+    ],
+    "Description":"Set of multiple status bits.\r\n\r\nThese bits are common for the entire device\r\nMeaning of respective bits: \r\nGeneral error - General error - sum of all errors.\r\nModbus timeout - Communication Modbus timeout.\r\nDevice is busy - Device is busy doing something else.\r\nGeneral warning - General warning - sum of multiple warnings.\r\n"
+  },
+  {
+    "Type":"HOLD", 
+    "Name":"REGU_DUMMY", 
+    "Id":67191122, 
+    "Address":[110, 111],
+    "Format":"INT",
+    "Value":1,
+    "Min":0,
+    "Max":0,
+    "Label":"Dummy variable",
+    "Description":"Blah blah blah"
+  }
+]

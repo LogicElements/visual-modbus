@@ -1,0 +1,7 @@
+﻿{
+    "width": 650,
+    "height": 550,
+    "slave_address": 1,
+    "reg_map": "Example-FW_Modbus.json",
+    "readout_period": 1
+}

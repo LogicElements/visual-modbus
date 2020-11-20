@@ -1,0 +1,10 @@
+﻿{
+    "comport": "COM3",
+    "baud_rate": 115200,
+    "stop_bits": 1,
+    "parity": "N",
+    "timeout": 2,
+    "inter_char_timeout": 30.0,
+    "silent_interval": 1.0,
+    "minimal_inter_char_timeout": 0.05
+}
