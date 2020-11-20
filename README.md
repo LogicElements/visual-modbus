@@ -4,9 +4,9 @@ This repository contains visual and testing python application for Modbus RTU sl
 
 
 ### Supported devices
-  - [RTD Emulator](https://logicelements.cz/en/produkty/rtd-emulator)
-  - Phase Detector
-  - RTD Meter VMS-1502
+  - [RTD Emulator](https://logicelements.cz/en/products/rtd-emulator)
+  - [Phase Detector](https://logicelements.cz/en/products/power-grid-voltage-detector)
+  - [RTD Meter VMS-1502](https://logicelements.cz/en/products/rtd-meter)
 	
 # Features
 
