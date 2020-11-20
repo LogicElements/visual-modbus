@@ -1,0 +1,8 @@
+# Ignore temporary files of Microsoft office
+~*
+
+__pycache__
+[Ll]og
+[Tt]est-reports
+*.log
+
