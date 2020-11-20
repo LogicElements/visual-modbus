@@ -189,7 +189,7 @@ class VisualMbApp:
                        SG.Button('Show Log'), SG.Cancel('Close')])
         layout.append([SG.Text('Status', key='T_STATUS', size=(Setting.s['width'] // 8, None))])
 
-        self.window = SG.Window('Modbus RTU readout. Version: ' + Help.VERSION, layout, resizable=True, finalize=True)
+        self.window = SG.Window('VisualModbus. Version: ' + Help.VERSION, layout, resizable=True, finalize=True)
         Setting.init_size(self.window.size)
         self._update_regs()
 
