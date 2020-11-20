@@ -1,0 +1,10 @@
+﻿{
+    "comport": "COM13",
+    "baud_rate": 19200,
+    "stop_bits": 1,
+    "parity": "E",
+    "timeout": 1,
+    "inter_char_timeout": 30.0,
+    "minimal_inter_char_timeout": 0.05,
+    "silent_interval": 1.0
+}

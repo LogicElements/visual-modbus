@@ -1,0 +1,9 @@
+﻿{
+    "width": 720,
+    "height": 680,
+    "slave_address": 32,
+    "reg_map": "RtdEmul_Modbus.json",
+    "attempts": 2,
+    "retry_delay": 0.5,
+    "readout_period": 1
+}

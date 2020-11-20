@@ -1,0 +1,9 @@
+﻿{
+    "align": 4,
+    "page_bytes": 64,
+    "type_binary": 2051,
+    "mode_operation": 1,
+    "address": 1000,
+    "test_mode": 1,
+    "init_delay": 0.5
+}
