@@ -16,7 +16,11 @@ The main feature is a graphical application that handles the modbus register map
   - Read and write register operations
   - Update firmware of the device
   
-The core modules of VisualModbus can also be used for scripting and testing. Unit test examples to come.
+The core modules of VisualModbus can also be used for scripting and testing. Device directories are provided by SimpleVerif*.py script that illustrates how to create a simple script for automated testing. It includes:
+  - Read device information
+  - Set device parameters
+  - Read/write input/output registers
+  - Reset device
 
 # Installation
 
@@ -30,11 +34,12 @@ The core modules of VisualModbus can also be used for scripting and testing. Uni
 
 # Usage
 
-To run visual modbus for the desired device, go to the device directory and run  VisualXxxx.py script, such as for RTD emulator:
+To run visual modbus for the desired device, go to the device directory and run  Visual*.py script, such as for RTD emulator:
 
     cd RtdEmulator
     python VisualRtdEmul.py
-	
+
+Such a window should appear.
 ![Alt text](visual-modbus.png?raw=true "VisualModbus application") 
   - "Settings" -> "Edit" shows window with all settings parameters to change. This can be used to adjust window dimension. First resize window, ge to Edit settings, notice window size has changed, "Save" new settings, close application, rerun application with new size.
   - "Help" shows new window with information.
@@ -54,7 +59,14 @@ To run visual modbus for the desired device, go to the device directory and run 
   - Button "Show Log" shows new window containing x most recet log entries.
   - Button "Close" closes the application.
   - Label marked as "6" shows only 1 most recent log entry.
-    
+
+To run simple example script for the desired device, go to the device directory and run SimpleVerif*.py script, such as for RTD emulator:
+
+    cd RtdEmulator
+    python SimpleVerifRtdEmul.py
+
+The script only prints the console output messages.
+
 # Settings
 
 There are 3 groups of setting parameters, that can be either set before running VisualModbus in respective json files, or within the application itself. 
