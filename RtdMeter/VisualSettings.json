@@ -1,0 +1,9 @@
+﻿{
+    "width": 650,
+    "height": 566,
+    "slave_address": 1,
+    "reg_map": "VMS_RTD_Modbus.json",
+    "attempts": 2,
+    "retry_delay": 0.5,
+    "readout_period": 1
+}
