@@ -1,0 +1,9 @@
+﻿{
+    "width": 650,
+    "height": 614,
+    "slave_address": 64,
+    "reg_map": "PhaseDet_Modbus.json",
+    "attempts": 2,
+    "retry_delay": 0.5,
+    "readout_period": 1
+}
