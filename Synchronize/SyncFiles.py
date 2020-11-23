@@ -3,7 +3,7 @@ from dirsync import sync
 action = 'sync'     # sync, diff, or update
 # action = 'diff'
 common_ignore = ["log", "__pycache__"]
-common_dev = ["Visual\\S+.py", "\\S+Settings.json"]
+common_dev = ["Visual\\S+.py", "\\S+Settings.json", "SimpleVerif\\S+.py"]
 
 
 visual_source = '../../le-py-core/le-core/VisualModbus/'
