@@ -61,12 +61,12 @@ There are 3 groups of setting parameters, that can be either set before running 
 
 ### VisualSettings.json
   - "width": 650,   `Window width (approx)`
-  - "height": 550,  `Widnow height (approx)`
+  - "height": 550,  `Window height (approx)`
   - "slave_address": 1, `Modbus RTU slave address of the device`
   - "reg_map": "Example-FW_Modbus.json", `Json description of device register map`
   - "attempts": 2, `Number of communication attempts`
   - "retry_delay": 0.5,`Delay between communication retries in seconds`
-  - "readout_period": 1.0  `Period of aperiodic readout in seconds (future use)`
+  - "readout_period": 1.0  `Period of a periodic readout in seconds (future use)`
 ### ComSettings.json
   - "comport": "COM3", `COM port name, for linux may be like /dev/ttyUSB0` 
   - "baud_rate": 19200,  `Communication baud rate`

@@ -84,7 +84,7 @@ class VisualMbApp:
             if event in 'Edit':
                 Setting.edit(self.window.size)
                 self.regs.slave = Setting.s['slave_address']
-            if event in 'Upgrade' and values[self.UPG_FILE] is not '':
+            if event in 'Upgrade' and values[self.UPG_FILE] != '':
                 self._upgrade(values[self.UPG_FILE])
             if event in 'Show Log':
                 self.win_log = self._show_log()
