@@ -1,6 +1,9 @@
 # Ignore temporary files of Microsoft office
 ~*
 
+# Ignore pycharm project files
+.idea
+
 __pycache__
 [Ll]og
 [Tt]est-reports
