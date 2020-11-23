@@ -12,9 +12,9 @@ This repository contains visual and testing python application for Modbus RTU sl
 
 The main feature is a graphical application that handles the modbus register map of the device and provides a graphical user interface for working with modbus slave devices. It allows for:
   - Import register map from json file
-  - Manage non-standard modbus register comosition and decomposition (long integers, float, string)
+  - Manage non-standard modbus register composition and decomposition (long integers, float, string)
   - Read and write register operations
-  - Update firmware of the modbus slave device
+  - Update firmware of the device
   
 The core modules of VisualModbus can also be used for scripting and testing. Unit test examples to come.
 
@@ -30,24 +30,24 @@ The core modules of VisualModbus can also be used for scripting and testing. Uni
 
 # Usage
 
-To run visual modbus for given supported device, go to the device directory and run  VisualXxxx.py script, such as for RTD emulator:
+To run visual modbus for the desired device, go to the device directory and run  VisualXxxx.py script, such as for RTD emulator:
 
     cd RtdEmulator
     python VisualRtdEmul.py
 	
 ![Alt text](visual-modbus.png?raw=true "VisualModbus application") 
   - "Settings" -> "Edit" shows window with all settings parameters to change. This can be used to adjust window dimension. First resize window, ge to Edit settings, notice window size has changed, "Save" new settings, close application, rerun application with new size.
-  - "Help" shows new window with information
-  - Button "?" shows new window with information of register on the given line
-  - Button "R" reads value of register on the given line only
-  - Label marked as "1" is unique name of the register within the device
-  - Textbox marked as "2" is last read value of the register in native format (decimal, float, string)
-  - Textbox marked as "3" is last read value of the register in hexadecimal format if applicable
-  - Label marked as "4" contains minimum and maximum value boundaries of the register
-  - Button "Select file" open dialog to select file for firmware upgrade
-  - Button "Upgrade" start the firmware upgrade procedure. Progress window should appear. When finished, progress window should disappear.
-  - Testbox marked as "5" shows path to selected firmware file.
-  - Button "Write" perform write operation on registers, the value of which has been changed (without pressing "Enter" inside the textbox "2" or "3"). If no register has been changed, the previous write operation is send again. This allows for re-send commands to some trigger register.
+  - "Help" shows new window with information.
+  - Button "?" shows new window with information of register on the given line.
+  - Button "R" reads value of register on the given line only.
+  - Label marked as "1" is unique name of the register within the device.
+  - Textbox marked as "2" is last read value of the register in native format (decimal, float, string).
+  - Textbox marked as "3" is last read value of the register in hexadecimal format if applicable.
+  - Label marked as "4" contains minimum and maximum value boundaries of the register.
+  - Button "Select file" opens dialog to select file for firmware upgrade.
+  - Button "Upgrade" starts the firmware upgrade procedure. Progress window should appear. When finished, progress window should disappear.
+  - Textbox marked as "5" shows path to selected firmware file.
+  - Button "Write" performs write operation on registers, the value of which has been changed (without pressing "Enter" inside the textbox "2" or "3"). If no register has been changed, the previous write operation is send again. This allows for re-send commands to some trigger register.
   - Button "Write All" writes values of all holding registers.
   - Button "Read" reads all registers.
   - Button "Com open/Com close" opens and closes COM port.
